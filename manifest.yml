@@ -1,0 +1,8 @@
+---
+applications:
+- name: ecf-engage-and-learn-redirector-production
+  memory: 32M
+  instances: 1
+  buildpack: staticfile_buildpack
+  env:
+    TARGET_DOMAIN: support-for-early-career-teachers.education.gov.uk

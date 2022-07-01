@@ -1,8 +1,11 @@
 ---
 applications:
 - name: ecf-engage-and-learn-redirector-production
+  routes:
+    - route: early-career-framework.education.gov.uk
+    - route: www.early-career-framework.education.gov.uk
   memory: 32M
-  instances: 1
+  instances: 2
   buildpack: staticfile_buildpack
   env:
     TARGET_DOMAIN: support-for-early-career-teachers.education.gov.uk
